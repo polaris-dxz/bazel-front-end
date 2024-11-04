@@ -50,4 +50,28 @@ ibazel run //react-webpack:dev_server
 
 visit http://localhost:8080/
 
+### Build
+
+To run the Bazel build execute the following:
+
+```shell
+bazel build //react-project-1/...
+```
+
+### Dev server
+
+To run the Bazel dev server execute the following:
+
+```shell
+ibazel run //react-project-1:dev_server
+```
+
+## react-project-1
+
+```shell
+cd react-project-1
+npm run bazel-build
+```
+
+
 ## umi-app
