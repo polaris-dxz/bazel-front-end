@@ -1,3 +1,4 @@
 packages:
   - 'react-webpack'
   - 'umi-app'
+  - 'react-project-1'

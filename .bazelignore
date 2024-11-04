@@ -1,3 +1,5 @@
 node_modules
 react-webpack/node_modules
 umi-app/node_modules
+react-project-1/node_modules
+bazel-*
