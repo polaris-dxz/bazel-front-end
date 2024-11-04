@@ -39,7 +39,6 @@ bin.webpack_cli(
         "dist/main.js",
         "dist/main.css",
         "dist/index.html",
-
     ],
     args = [
         "--config webpack.config.js",
