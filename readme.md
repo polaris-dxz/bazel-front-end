@@ -73,5 +73,9 @@ cd react-project-1
 npm run bazel-build
 ```
 
-
 ## umi-app
+
+```shell
+cd umi-app
+npm run bazel-build
+```
