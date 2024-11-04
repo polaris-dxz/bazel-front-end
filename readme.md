@@ -17,17 +17,37 @@ framework 比如sensedesign/umijs 可能涉及自己写一些便利的rules 这�
 - linter
 - 测试
 
-## bazelize
-
-### 确认 bazel 版本
+## 准备
 
 `bazel version` 查看本机 bazel 版本，修改项目 .bazelversion 内容为自己版本，确保版本 bazel 校验通过
 
-### install dependencies
+## Install dependencies
+
+### Generate pnpm-lock
 
 > corepack enable
 > pnpm install --lockfile-only
 
 当前 lockfile 是基于 higgs-frontend 依赖 pnpm@8.15.8 生成
 
-~~To install dependencies with Bazel-managed pnpm, run": "bazel run @pnpm//:pnpm -- --dir $PWD install~~
+## react-webpack
+
+### Build
+
+To run the Bazel build execute the following:
+
+```shell
+bazel build //react-webpack/...
+```
+
+### Dev server
+
+To run the Bazel dev server execute the following:
+
+```shell
+ibazel run //react-webpack:dev_server
+```
+
+visit http://localhost:8080/
+
+## umi-app
